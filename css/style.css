@@ -121,5 +121,34 @@ p {
     filter: brightness(1);
 }
 
-/* resonsive */
+/* responsive */
 
+@media screen and (max-width: 650px) and (orientation: portrait) {
+    #header {
+        padding: 0 4em;
+        width: calc( 100% - 8em );
+    }
+    .header-brand {
+        width: 40%;
+    }
+    .header-menu {
+        width: 60%;
+    }
+    #hero {
+        flex-direction: column;
+        padding-top: 7em;
+    }
+    .img-container {
+        min-height: unset;
+        min-width: unset;
+        width: 100%;
+        padding: 0;
+    }
+    .profile {
+        margin: 0 10%;
+    }
+    .info {
+        padding-top: 0;
+        padding-left: 2em;
+    }
+}
